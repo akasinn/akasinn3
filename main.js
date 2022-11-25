@@ -35,29 +35,22 @@ const draw = () => {
     buffer.width * 3 / 4,
     buffer.height / 4
   );
-
-
-  
-  
 }//function draw end
 
 
 
-let x=0;
 const loop = () => {
-  //while(true){
-    ctx.fillStyle = "black";
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
+  ctx.fillStyle = "white";
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-    draw();
+  draw();
 
-    ctx.drawImage(
-      buffer,
-      0, 0, buffer.width, buffer.height,
-      0, 0, canvas.width, canvas.height
-    );
+  ctx.drawImage(
+    buffer,
+    0, 0, buffer.width, buffer.height,
+    0, 0, canvas.width, canvas.height
+  );
 
-  //}
   window.requestAnimationFrame(loop);
 }
 
