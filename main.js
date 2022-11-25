@@ -45,7 +45,7 @@ const draw = () => {
 
 let x=0;
 const loop = () => {
-  while(true){
+  //while(true){
     ctx.fillStyle = "black";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
@@ -58,7 +58,8 @@ const loop = () => {
     );
 
     window.requestAnimationFrame(loop);
-  }
+  //}
+  window.requestAnimationFrame(loop);
 }
 
 
