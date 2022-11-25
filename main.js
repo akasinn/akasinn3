@@ -31,8 +31,8 @@ const draw = () => {
   btx.textAlign = "center";
   btx.font = "60px serif";
   btx.fillText(
-    "kWh",
-    buffer.width / 2,
+    "・",
+    buffer.width * 3 / 4,
     buffer.height / 4
   );
 
