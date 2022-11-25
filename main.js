@@ -27,6 +27,15 @@ const draw = () => {
   // 背景
   btx.fillStyle = "gray";
   btx.fillRect(0, 0, buffer.width, buffer.height);
+  // 点を打つ
+  btx.fillStyle = "white";
+  btx.textAlign = "center";
+  btx.font = "60px serif";
+  btx.fillText(
+    "kWh",
+    buffer.width / 2,
+    buffer.height / 4
+  );
 
 
   
@@ -35,7 +44,7 @@ const draw = () => {
 
 
 
-
+let x=0;
 const loop = () => {
   ctx.fillStyle = "white";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
