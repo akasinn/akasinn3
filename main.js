@@ -66,7 +66,7 @@ class Player {
       this.jumpLives = this.jumpLimit;
     }
   }
-}
+}//class player end
 
 class Hurdle {
   constructor() {
@@ -107,7 +107,7 @@ class Hurdle {
     }
     return true;
   }
-}
+}//class hurdle end
 
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
