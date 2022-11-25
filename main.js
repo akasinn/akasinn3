@@ -24,6 +24,7 @@ const game = {
   hurdles: []
 }
 
+//ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー 
 class Player {
   constructor() {
     this.x = PLAYER_X;
@@ -68,6 +69,7 @@ class Player {
   }
 }//class player end
 
+//ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー 
 class Hurdle {
   constructor() {
     this.x = buffer.width + MARGIN;
@@ -121,7 +123,8 @@ const resize = () => {
     canvas.width = window.innerHeight * aspect;
     canvas.height = window.innerHeight;
   }
-}
+}//function resize end
+
 window.addEventListener('resize', resize, false);
 resize();
 
@@ -157,7 +160,8 @@ const draw = () => {
 
   player.draw();
   game.hurdles.forEach(hurdle => hurdle.draw());
-}
+}//function draw end
+
 
 const update = () => {
   player.update();
