@@ -115,8 +115,7 @@ const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
 const resize = () => {
-  const aspect = 1;
-  if (window.innerWidth / aspect < window.innerHeight) {
+  if (window.innerWidth  < window.innerHeight) {
     canvas.width = window.innerWidth;
     canvas.height = window.innerWidth / aspect;
   } else {
