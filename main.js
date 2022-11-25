@@ -45,23 +45,24 @@ const draw = () => {
 
 let x=0;
 const loop = () => {
-  ctx.fillStyle = "black";
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  while(true){
+    ctx.fillStyle = "black";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-  draw();
+    draw();
 
-  ctx.drawImage(
-    buffer,
-    0, 0, buffer.width, buffer.height,
-    0, 0, canvas.width, canvas.height
-  );
+    ctx.drawImage(
+      buffer,
+      0, 0, buffer.width, buffer.height,
+      0, 0, canvas.width, canvas.height
+    );
 
-  window.requestAnimationFrame(loop);
+    window.requestAnimationFrame(loop);
+  }
 }
 
 
 
-window.onload = loop;
 
 if ("ontouchstart" in window) {
   window.ontouchend = onInput;
