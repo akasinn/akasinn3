@@ -29,10 +29,7 @@ const draw = () => {
   btx.fillRect(0, 0, buffer.width, buffer.height);
 
 
-  // 地面
-  btx.fillStyle = "black";
-  btx.fillRect(0, GROUND_Y, buffer.width, buffer.height - GROUND_Y);
-
+  
   
 }//function draw end
 
