@@ -6,13 +6,12 @@ const ctx = canvas.getContext("2d");
 const resize = () => {
   if (window.innerWidth  < window.innerHeight) {
     canvas.width = window.innerWidth;
-    canvas.height = window.innerWidth / aspect;
+    canvas.height = window.innerWidth;
   } else {
-    canvas.width = window.innerHeight * aspect;
+    canvas.width = window.innerHeight;
     canvas.height = window.innerHeight;
   }
 }//function resize end
-
 window.addEventListener('resize', resize, false);
 resize();
 
@@ -46,7 +45,7 @@ const draw = () => {
 
 let x=0;
 const loop = () => {
-  ctx.fillStyle = "white";
+  ctx.fillStyle = "black";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
   draw();
