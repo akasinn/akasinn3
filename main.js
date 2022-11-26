@@ -140,7 +140,7 @@ const player = new Player();
 
 const draw = () => {
   // 背景
-  btx.fillStyle = "gray";
+  btx.fillStyle = "white";
   btx.fillRect(0, 0, buffer.width, buffer.height);
 
   // スコア
@@ -213,5 +213,6 @@ if ("ontouchstart" in window) {
 GROUND_Yを850から800へ
 11/27/8:31
 変化が見られなかったのでGROUND_Yを800から100へ
-
+11×27/8/36
+変化があった。背景をwhiteにした。
 */
