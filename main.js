@@ -208,3 +208,9 @@ if ("ontouchstart" in window) {
 } else {
   window.onclick = onInput;
 }
+/*更新履歴
+11/27/8:28
+GROUND_Yを850から800へ
+
+
+*/
