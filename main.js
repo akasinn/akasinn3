@@ -1,7 +1,7 @@
 
 
 const PLAYER_X = 200;
-const GROUND_Y = 100;
+const GROUND_Y = 850;
 const PLAYER_RADIUS = 80;
 const HURDLE_RADIUS = 63;
 const MARGIN = 200;
