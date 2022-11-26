@@ -157,8 +157,8 @@ const draw = () => {
  // btx.fillStyle = "black";
  // btx.fillRect(0, GROUND_Y, buffer.width, buffer.height - GROUND_Y);
 
-  player.draw();
-  game.hurdles.forEach(hurdle => hurdle.draw());
+  //player.draw();
+  //game.hurdles.forEach(hurdle => hurdle.draw());
 }
 
 const update = () => {
@@ -174,7 +174,7 @@ const loop = () => {
   ctx.fillStyle = "white";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-  update();
+  //update();
   draw();
 
   ctx.drawImage(
@@ -217,5 +217,6 @@ GROUND_Yを850から800へ
 変化があった。背景をwhiteにした。
 11/27/8:41
 変化がない。背景をgreenにして、groundを消す。
-
+11/27/8:47
+変化があった。いらん所をコメントアウト
 */
