@@ -1,7 +1,7 @@
 
 
 const PLAYER_X = 200;
-const GROUND_Y = 800;
+const GROUND_Y = 100;
 const PLAYER_RADIUS = 80;
 const HURDLE_RADIUS = 63;
 const MARGIN = 200;
@@ -211,6 +211,7 @@ if ("ontouchstart" in window) {
 /*更新履歴
 11/27/8:28
 GROUND_Yを850から800へ
-
+11/27/8:31
+変化が見られなかったのでGROUND_Yを800から100へ
 
 */
