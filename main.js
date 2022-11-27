@@ -161,6 +161,7 @@ const draw = () => {
   //game.hurdles.forEach(hurdle => hurdle.draw());
 }
 
+/*
 const update = () => {
   player.update();
   game.hurdles = game.hurdles.filter(hurdle => hurdle.update());
@@ -168,7 +169,7 @@ const update = () => {
   if (game.isRunning && game.hurdles.length < 1) {
     game.hurdles.push(new Hurdle());
   }
-}
+}*/
 
 const loop = () => {
   ctx.fillStyle = "white";
@@ -203,11 +204,12 @@ const onInput = (e) => {
 
 window.onload = loop;
 
+/*
 if ("ontouchstart" in window) {
   window.ontouchend = onInput;
 } else {
   window.onclick = onInput;
-}
+}*/
 /*更新履歴
 11/27/8:28
 GROUND_Yを850から800へ
@@ -221,4 +223,6 @@ GROUND_Yを850から800へ
 変化があった。いらん所をコメントアウト
 11/27/22:41
 ループしやんようにした。
+11/27/22/50
+最後のifを消してみた。
 */
