@@ -1,5 +1,5 @@
 
-
+/*
 const PLAYER_X = 200;
 const GROUND_Y = 100;
 const PLAYER_RADIUS = 80;
@@ -109,7 +109,7 @@ class Hurdle {
     }
     return true;
   }
-}
+}*/
 
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
@@ -131,11 +131,12 @@ const buffer = document.createElement("canvas");
 const btx = buffer.getContext("2d");
 buffer.width = buffer.height = 1000;
 
+/*
 const playerImage = new Image();
 playerImage.src = "image/power-plant.png";
 const hurdleImage = new Image();
 hurdleImage.src = "image/conifer.png";
-
+*/
 const player = new Player();
 
 const draw = () => {
@@ -187,6 +188,7 @@ const loop = () => {
   //window.requestAnimationFrame(loop);
 }
 
+/*
 const onInput = (e) => {
   // ゲームオーバーの後、入力を受け付けない
   if (game.isOver) return;
@@ -200,7 +202,7 @@ const onInput = (e) => {
   if (player.jumpLives <= 0) return;
   player.jumpLives--;
   player.vy = -INITIAL_JUMP_V;
-}
+}*/
 
 window.onload = loop;
 
@@ -223,6 +225,9 @@ GROUND_Yを850から800へ
 変化があった。いらん所をコメントアウト
 11/27/22:41
 ループしやんようにした。
-11/27/22/50
+11/27/22:50
 最後のifを消してみた。
+11/27/22:57
+大胆にコメントアウト
+
 */
