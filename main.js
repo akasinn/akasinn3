@@ -183,7 +183,7 @@ const loop = () => {
     0, 0, canvas.width, canvas.height
   );
 
-  window.requestAnimationFrame(loop);
+  //window.requestAnimationFrame(loop);
 }
 
 const onInput = (e) => {
@@ -219,4 +219,6 @@ GROUND_Yを850から800へ
 変化がない。背景をgreenにして、groundを消す。
 11/27/8:47
 変化があった。いらん所をコメントアウト
+11/27/22:41
+ループしやんようにした。
 */
