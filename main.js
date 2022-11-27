@@ -61,7 +61,15 @@ const loop = () => {
 
 
 function main() {
-  loop();
+  draw();
+
+  ctx.drawImage(
+    buffer,
+    0, 0, buffer.width, buffer.height,
+    0, 0, canvas.width, canvas.height
+  );
+
+  //loop();
   return ;
 }
 
@@ -89,4 +97,6 @@ GROUND_Yを850から800へ
 コメントアウトした所を削除
 11/28/6:40
 "kWh"をf(x)に変える
+11/28/7:15
+main関数を導入し、roop関数を使わないようにした
 */
