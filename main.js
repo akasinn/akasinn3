@@ -33,8 +33,8 @@ const draw = () => {
   btx.textAlign = "center";
   btx.font = "60px serif";
   btx.fillText(
-    "kWh",
-    buffer.width / 2,
+    "f(x)",
+    buffer.width / 4,
     buffer.height / 4
   );
 
@@ -82,5 +82,6 @@ GROUND_Yを850から800へ
 大胆にコメントアウト
 11/27/23:03
 コメントアウトした所を削除
-
+11/28/6:40
+"kWh"をf(x)に変える
 */
