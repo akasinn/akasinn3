@@ -33,7 +33,7 @@ const draw = () => {
   btx.textAlign = "center";
   btx.font = "60px serif";
   btx.fillText(
-    game.score + "kWh",
+    "kWh",
     buffer.width / 2,
     buffer.height / 4
   );
