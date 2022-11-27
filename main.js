@@ -60,7 +60,12 @@ const loop = () => {
 }
 
 
-window.onload = loop;
+function main() {
+  loop();
+  return ;
+}
+
+window.onload = main;
 
 
 /*更新履歴
