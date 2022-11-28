@@ -5,7 +5,7 @@ const ctx = canvas.getContext("2d");
 
 
 const resize = () => {
-  const aspect = 2;
+  const aspect = 0.5;
   if (window.innerWidth / aspect < window.innerHeight) {
     canvas.width = window.innerWidth;
     canvas.height = window.innerWidth / aspect;
@@ -62,7 +62,7 @@ const loop = () => {
 
 
 function main() {
-  ctx.fillStyle = "black";
+  ctx.fillStyle = "green";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
   return;
 
@@ -106,4 +106,6 @@ GROUND_Yを850から800へ
 main関数を導入し、roop関数を使わないようにした
 11/28/15:03
 aspectを2に
+11/28/20:23
+aspectを0.5に。
 */
