@@ -3,9 +3,9 @@
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
-/*
+
 const resize = () => {
-  const aspect = 1;
+  const aspect = 2;
   if (window.innerWidth / aspect < window.innerHeight) {
     canvas.width = window.innerWidth;
     canvas.height = window.innerWidth / aspect;
@@ -15,7 +15,7 @@ const resize = () => {
   }
 }
 window.addEventListener('resize', resize, false);
-resize();*/
+resize();
 
 const buffer = document.createElement("canvas");
 const btx = buffer.getContext("2d");
@@ -104,4 +104,6 @@ GROUND_Yを850から800へ
 "kWh"をf(x)に変える
 11/28/7:15
 main関数を導入し、roop関数を使わないようにした
+11/28/15:03
+aspectを2に
 */
