@@ -3,6 +3,7 @@
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
+/*
 const resize = () => {
   const aspect = 1;
   if (window.innerWidth / aspect < window.innerHeight) {
@@ -14,7 +15,7 @@ const resize = () => {
   }
 }
 window.addEventListener('resize', resize, false);
-resize();
+resize();*/
 
 const buffer = document.createElement("canvas");
 const btx = buffer.getContext("2d");
@@ -61,6 +62,10 @@ const loop = () => {
 
 
 function main() {
+  ctx.fillStyle = "black";
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  return;
+
   draw();
 
   ctx.drawImage(
