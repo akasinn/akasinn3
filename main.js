@@ -62,7 +62,7 @@ const loop = () => {
 
 
 function main() {
-  ctx.fillStyle = "green";
+  ctx.fillStyle = "blue";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
   return;
 
@@ -108,4 +108,6 @@ main関数を導入し、roop関数を使わないようにした
 aspectを2に
 11/28/20:23
 aspectを0.5に。
+12/3/11:43
+ctx.fillStyle = "green->blue";
 */
