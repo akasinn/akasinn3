@@ -3,7 +3,7 @@
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
-
+/*
 const resize = () => {
   const aspect = 0.5;
   if (window.innerWidth / aspect < window.innerHeight) {
@@ -15,7 +15,7 @@ const resize = () => {
   }
 }
 window.addEventListener('resize', resize, false);
-resize();
+resize();*/
 
 const buffer = document.createElement("canvas");
 const btx = buffer.getContext("2d");
@@ -112,4 +112,6 @@ aspectを0.5に。
 ctx.fillStyle = "green->blue";
 12/3/12:05
 main関数中のreturnをコメントアウト
+12/3/14:50
+resize関数をコメントアウト
 */
