@@ -64,7 +64,7 @@ const loop = () => {
 function main() {
   ctx.fillStyle = "blue";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
-  return;
+  //return;
 
   draw();
 
@@ -110,4 +110,6 @@ aspectを2に
 aspectを0.5に。
 12/3/11:43
 ctx.fillStyle = "green->blue";
+12/3/12:05
+main関数中のreturnをコメントアウト
 */
