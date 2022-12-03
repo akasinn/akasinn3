@@ -3,19 +3,13 @@
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
-/*
+
 const resize = () => {
-  const aspect = 0.5;
-  if (window.innerWidth / aspect < window.innerHeight) {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerWidth / aspect;
-  } else {
-    canvas.width = window.innerHeight * aspect;
-    canvas.height = window.innerHeight;
-  }
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
 }
 window.addEventListener('resize', resize, false);
-resize();*/
+resize();
 
 const buffer = document.createElement("canvas");
 const btx = buffer.getContext("2d");
@@ -114,4 +108,6 @@ ctx.fillStyle = "green->blue";
 main関数中のreturnをコメントアウト
 12/3/14:50
 resize関数をコメントアウト
+12/3/15:02
+resize関数復活。画面全体がcanvasになるように。
 */
