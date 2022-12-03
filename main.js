@@ -23,12 +23,12 @@ const draw = () => {
   btx.fillStyle = "green";
   btx.fillRect(0, 0, buffer.width, buffer.height);
 
-  // スコア
+  // 文字列
   btx.fillStyle = "white";
   btx.textAlign = "center";
   btx.font = "60px serif";
   btx.fillText(
-    "f(x)",
+    "関数f(x)",
     buffer.width / 4,
     buffer.height / 4
   );
@@ -110,4 +110,6 @@ main関数中のreturnをコメントアウト
 resize関数をコメントアウト
 12/3/15:02
 resize関数復活。画面全体がcanvasになるように。
+12/3/20:40
+"f(x)->関数f(x)"
 */
