@@ -72,7 +72,7 @@ function main() {
   ctx.lineTo(125, 45);
   ctx.lineTo(45, 125);
   ctx.closePath();
-  ctx.stroke();
+  ctx.fill();
 
   //loop();
   return ;
@@ -126,4 +126,6 @@ bufferの縦横を1000->1200
 x軸を追加
 12/4/20:38
 x軸を消して三角形を追加
+12/4/20:54
+stroke->fill
 */
