@@ -32,7 +32,10 @@ const draw = () => {
     buffer.width / 4,
     buffer.height / 4
   );
-
+  btx.beginPath();
+  btx.moveTo(0,1000);
+  btx.lineTo(1200,1000);
+  btx.fill();
   
 }
 
