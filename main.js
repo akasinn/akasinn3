@@ -1,4 +1,6 @@
 
+const version=11;
+
 
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
@@ -28,17 +30,20 @@ const draw = () => {
   btx.textAlign = "center";
   btx.font = "60px serif";
   btx.fillText(
-    "ver10",
+    "ver"+version,
     buffer.width / 4,
     buffer.height / 4
   );
   //軸
   btx.fillStyle = "black";
   btx.beginPath();
-  btx.moveTo(10,500);
-  btx.lineTo(1190,500);
-  btx.lineTo(1190,510);
-  btx.lineTo(10,510);
+  btx.moveTo(10,495);
+  btx.lineTo(1150,495);
+  btx.lineTo(1150,490);
+  btx.lineTo(1160,500);
+  btx.lineTo(1150,510);
+  btx.lineTo(1150,505);
+  btx.lineTo(10,505);
   btx.closePath();
   btx.fill();
 }
@@ -146,4 +151,6 @@ stroke->fill
 btxにも同様の長方形を少し上に。
 12/5/7:24ver10
 文字列がバージョンを表すように。
+12/5/7:33ver11
+軸を矢印に。versionを文字でおく。
 */
