@@ -28,7 +28,7 @@ const draw = () => {
   btx.textAlign = "center";
   btx.font = "60px serif";
   btx.fillText(
-    "関数f(x)",
+    "ver10",
     buffer.width / 4,
     buffer.height / 4
   );
@@ -144,4 +144,6 @@ stroke->fill
 三角形を横長の長方形へ
 12/5/7:21
 btxにも同様の長方形を少し上に。
+12/5/7:24ver10
+文字列がバージョンを表すように。
 */
