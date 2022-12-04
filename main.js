@@ -32,10 +32,6 @@ const draw = () => {
     buffer.width / 4,
     buffer.height / 4
   );
-  btx.beginPath();
-  btx.moveTo(10,1000);
-  btx.lineTo(1190,1000);
-  ctx.stroke();
   
 }
 
@@ -70,6 +66,13 @@ function main() {
     0, 0, buffer.width, buffer.height,
     0, 0, buffer.width, buffer.height
   );
+  
+  ctx.beginPath();
+  ctx.moveTo(125, 125);
+  ctx.lineTo(125, 45);
+  ctx.lineTo(45, 125);
+  ctx.closePath();
+  ctx.stroke();
 
   //loop();
   return ;
@@ -121,4 +124,6 @@ resize関数復活。画面全体がcanvasになるように。
 bufferの縦横を1000->1200
 12/4/20:32
 x軸を追加
+12/4/20:38
+x軸を消して三角形を追加
 */
