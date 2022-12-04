@@ -32,7 +32,15 @@ const draw = () => {
     buffer.width / 4,
     buffer.height / 4
   );
-  
+  //軸
+  btx.fillStyle = "black";
+  btx.beginPath();
+  btx.moveTo(10,500);
+  btx.lineTo(1190,500);
+  btx.lineTo(1190,510);
+  btx.lineTo(10,510);
+  btx.closePath();
+  btx.fill();
 }
 
 
@@ -134,4 +142,6 @@ stroke->fill
 青い三角形ができてしまったので黒くした
 12/5/7:10
 三角形を横長の長方形へ
+12/5/7:21
+btxにも同様の長方形を少し上に。
 */
