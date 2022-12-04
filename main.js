@@ -69,9 +69,10 @@ function main() {
   
   ctx.fillStyle = "black";
   ctx.beginPath();
-  ctx.moveTo(125, 125);
-  ctx.lineTo(125, 45);
-  ctx.lineTo(45, 125);
+  ctx.moveTo(10,600,);
+  ctx.lineTo(1190,600);
+  ctx.lineTo(1190,610);
+  ctx.lineTo(10,610);
   ctx.closePath();
   ctx.fill();
 
@@ -131,4 +132,6 @@ x軸を消して三角形を追加
 stroke->fill
 12/4/20:58
 青い三角形ができてしまったので黒くした
+12/5/7:10
+三角形を横長の長方形へ
 */
