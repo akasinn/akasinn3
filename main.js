@@ -13,7 +13,7 @@ resize();
 
 const buffer = document.createElement("canvas");
 const btx = buffer.getContext("2d");
-buffer.width = buffer.height = 1000;
+buffer.width = buffer.height = 1200;
 
 
 
@@ -114,4 +114,6 @@ resize関数復活。画面全体がcanvasになるように。
 "f(x)->関数f(x)"
 12/4/11:06
 下の方は青く表示されるように
+12/4/19:40
+bufferの縦横を1000->1200
 */
