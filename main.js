@@ -65,7 +65,7 @@ function main() {
   ctx.drawImage(
     buffer,
     0, 0, buffer.width, buffer.height,
-    0, 0, canvas.width, canvas.height
+    0, 0, buffer.width, buffer.height
   );
 
   //loop();
@@ -112,4 +112,6 @@ resize関数をコメントアウト
 resize関数復活。画面全体がcanvasになるように。
 12/3/20:40
 "f(x)->関数f(x)"
+12/4/11:06
+下の方は青く表示されるように
 */
