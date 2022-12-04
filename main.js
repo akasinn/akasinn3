@@ -35,7 +35,7 @@ const draw = () => {
   btx.beginPath();
   btx.moveTo(10,1000);
   btx.lineTo(1190,1000);
-  btx.fill();
+  ctx.stroke();
   
 }
 
@@ -119,6 +119,6 @@ resize関数復活。画面全体がcanvasになるように。
 下の方は青く表示されるように
 12/4/19:40
 bufferの縦横を1000->1200
-12/4/20:30
+12/4/20:32
 x軸を追加
 */
