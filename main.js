@@ -67,6 +67,7 @@ function main() {
     0, 0, buffer.width, buffer.height
   );
   
+  ctx.fillStyle = "black";
   ctx.beginPath();
   ctx.moveTo(125, 125);
   ctx.lineTo(125, 45);
@@ -128,4 +129,6 @@ x軸を追加
 x軸を消して三角形を追加
 12/4/20:54
 stroke->fill
+12/4/20:58
+青い三角形ができてしまったので黒くした
 */
