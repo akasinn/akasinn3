@@ -1,5 +1,5 @@
 
-const version=13;
+const version=14;
 
 
 const canvas = document.getElementById("canvas");
@@ -35,7 +35,7 @@ const draw = () => {
     buffer.height / 4
   );
   //軸
-  btx.fillStyle = "black";
+  btx.fillStyle = "red";
   btx.beginPath();
   btx.moveTo(10,495);
   btx.lineTo(550,495);
@@ -47,14 +47,15 @@ const draw = () => {
   btx.closePath();
   btx.fill();
   
+  btx.fillStyle = "black";
   btx.beginPath();
   btx.moveTo(10,1095);
   btx.lineTo(850,1095);
   btx.lineTo(850,1090);
-  btx.lineTo(860,1200);
-  btx.lineTo(850,1210);
-  btx.lineTo(850,1205);
-  btx.lineTo(10,1205);
+  btx.lineTo(860,1100);
+  btx.lineTo(850,1110);
+  btx.lineTo(850,1105);
+  btx.lineTo(10,1105);
   btx.closePath();
   btx.fill();
 }
@@ -91,7 +92,7 @@ function main() {
     0, 0, buffer.width, buffer.height
   );
   
-  ctx.fillStyle = "black";
+  ctx.fillStyle = "gray";
   ctx.beginPath();
   ctx.moveTo(10,600,);
   ctx.lineTo(1190,600);
@@ -168,4 +169,6 @@ btxにも同様の長方形を少し上に。
 矢印を短く
 ver13
 矢印をもう一つ
+ver14
+追加した矢印を修正、矢印をカラフルに
 */
