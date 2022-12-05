@@ -1,5 +1,5 @@
 
-const version=15;
+const version=16;
 
 
 const canvas = document.getElementById("canvas");
@@ -75,7 +75,7 @@ const loop = () => {
     0, 0, canvas.width, canvas.height
   );
 
-  //window.requestAnimationFrame(loop);
+  window.requestAnimationFrame(loop);
 }
 
 
@@ -173,4 +173,6 @@ ver14
 追加した矢印を修正、矢印をカラフルに
 ver15
 loopを用いて、消えないように
+ver16
+ちゃんとloopするように
 */
