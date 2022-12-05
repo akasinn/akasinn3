@@ -1,5 +1,5 @@
 
-const version=11;
+const version=12;
 
 
 const canvas = document.getElementById("canvas");
@@ -38,11 +38,11 @@ const draw = () => {
   btx.fillStyle = "black";
   btx.beginPath();
   btx.moveTo(10,495);
-  btx.lineTo(1150,495);
-  btx.lineTo(1150,490);
-  btx.lineTo(1160,500);
-  btx.lineTo(1150,510);
-  btx.lineTo(1150,505);
+  btx.lineTo(550,495);
+  btx.lineTo(550,490);
+  btx.lineTo(560,500);
+  btx.lineTo(550,510);
+  btx.lineTo(550,505);
   btx.lineTo(10,505);
   btx.closePath();
   btx.fill();
@@ -153,4 +153,6 @@ btxにも同様の長方形を少し上に。
 文字列がバージョンを表すように。
 12/5/7:33ver11
 軸を矢印に。versionを文字でおく。
+12/5/19:47ver12
+矢印を短く
 */
