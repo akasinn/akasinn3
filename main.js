@@ -1,5 +1,5 @@
 
-const version=14;
+const version=15;
 
 
 const canvas = document.getElementById("canvas");
@@ -105,7 +105,7 @@ function main() {
   return ;
 }
 
-window.onload = main;
+window.onload = loop;
 
 
 /*更新履歴
@@ -171,4 +171,6 @@ ver13
 矢印をもう一つ
 ver14
 追加した矢印を修正、矢印をカラフルに
+ver15
+loopを用いて、消えないように
 */
