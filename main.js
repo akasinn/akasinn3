@@ -1,5 +1,5 @@
 
-const version=12;
+const version=13;
 
 
 const canvas = document.getElementById("canvas");
@@ -44,6 +44,17 @@ const draw = () => {
   btx.lineTo(550,510);
   btx.lineTo(550,505);
   btx.lineTo(10,505);
+  btx.closePath();
+  btx.fill();
+  
+  btx.beginPath();
+  btx.moveTo(10,1095);
+  btx.lineTo(850,1095);
+  btx.lineTo(850,1090);
+  btx.lineTo(860,1200);
+  btx.lineTo(850,1210);
+  btx.lineTo(850,1205);
+  btx.lineTo(10,1205);
   btx.closePath();
   btx.fill();
 }
@@ -155,4 +166,6 @@ btxにも同様の長方形を少し上に。
 軸を矢印に。versionを文字でおく。
 12/5/19:47ver12
 矢印を短く
+ver13
+矢印をもう一つ
 */
