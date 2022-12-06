@@ -1,5 +1,5 @@
 
-const version=66;
+const version=67;
 
 
 const canvas = document.getElementById("canvas");
@@ -84,7 +84,7 @@ const loop = () => {
   window.requestAnimationFrame(loop);
 }
 
-/*
+
 function main() {
   ctx.fillStyle = "blue";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -109,9 +109,9 @@ function main() {
 
   //loop();
   return ;
-}*/
+}
 
-window.onload = loop;
+window.onload = main;
 
 
 /*更新履歴
@@ -187,4 +187,6 @@ ver65
 幅を1100にして、座標変換
 ver66
 エラーが出たので、いっぱいコメントアウト
+ver67
+エラーが治らない。loopをmainに
 */
