@@ -1,5 +1,5 @@
 
-const version=64;
+const version=65;
 
 
 const canvas = document.getElementById("canvas");
@@ -15,7 +15,7 @@ resize();
 
 const buffer = document.createElement("canvas");
 const btx = buffer.getContext("2d");
-buffer.width = buffer.height = 1200;
+buffer.width = buffer.height = 1100;
 
 
 
@@ -24,6 +24,10 @@ const draw = () => {
   // 背景
   btx.fillStyle = "green";
   btx.fillRect(0, 0, buffer.width, buffer.height);
+  
+  //座標変換
+  translate(50,1050);
+  scale(1,-1);
 
   // 文字列
   btx.fillStyle = "white";
@@ -177,4 +181,6 @@ ver16
 ちゃんとloopするように
 ver64
 縦横比をしっかり
+ver65
+幅を1100にして、座標変換
 */
