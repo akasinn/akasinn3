@@ -1,5 +1,5 @@
 
-const version=67;
+const version=68;
 
 
 const canvas = document.getElementById("canvas");
@@ -95,7 +95,7 @@ function main() {
   ctx.drawImage(
     buffer,
     0, 0, buffer.width, buffer.height,
-    0, 0, buffer.width, buffer.height
+    0, 0, canvas.width, canvas.width
   );
   
   ctx.fillStyle = "gray";
@@ -189,4 +189,6 @@ ver66
 エラーが出たので、いっぱいコメントアウト
 ver67
 エラーが治らない。loopをmainに
+ver68
+drawImageをbuffer.width->canvas.width
 */
