@@ -1,5 +1,5 @@
 
-const version=68;
+const version=69;
 
 
 const canvas = document.getElementById("canvas");
@@ -35,8 +35,8 @@ const draw = () => {
   btx.font = "60px serif";
   btx.fillText(
     "ver"+version,
-    buffer.width / 4,
-    buffer.height / 4
+    500,
+    500
   );
 /*
   //軸
@@ -191,4 +191,6 @@ ver67
 エラーが治らない。loopをmainに
 ver68
 drawImageをbuffer.width->canvas.width
+ver69
+buffer.widthを削除
 */
