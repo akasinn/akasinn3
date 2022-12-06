@@ -1,5 +1,5 @@
 
-const version=65;
+const version=66;
 
 
 const canvas = document.getElementById("canvas");
@@ -38,6 +38,7 @@ const draw = () => {
     buffer.width / 4,
     buffer.height / 4
   );
+/*
   //軸
   btx.fillStyle = "red";
   btx.beginPath();
@@ -62,6 +63,7 @@ const draw = () => {
   btx.lineTo(10,1105);
   btx.closePath();
   btx.fill();
+*/
 }
 
 
@@ -82,7 +84,7 @@ const loop = () => {
   window.requestAnimationFrame(loop);
 }
 
-
+/*
 function main() {
   ctx.fillStyle = "blue";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -107,7 +109,7 @@ function main() {
 
   //loop();
   return ;
-}
+}*/
 
 window.onload = loop;
 
@@ -183,4 +185,6 @@ ver64
 縦横比をしっかり
 ver65
 幅を1100にして、座標変換
+ver66
+エラーが出たので、いっぱいコメントアウト
 */
