@@ -1,5 +1,5 @@
 
-const version=16;
+const version=64;
 
 
 const canvas = document.getElementById("canvas");
@@ -72,7 +72,7 @@ const loop = () => {
   ctx.drawImage(
     buffer,
     0, 0, buffer.width, buffer.height,
-    0, 0, canvas.width, canvas.height
+    0, 0, canvas.width, canvas.width
   );
 
   window.requestAnimationFrame(loop);
@@ -175,4 +175,6 @@ ver15
 loopを用いて、消えないように
 ver16
 ちゃんとloopするように
+ver64
+縦横比をしっかり
 */
