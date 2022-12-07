@@ -1,5 +1,5 @@
 
-const version=74;
+const version=75;
 
 
 const canvas = document.getElementById("canvas");
@@ -25,13 +25,6 @@ const draw = () => {
   btx.fillStyle = "green";
   btx.fillRect(0, 0, buffer.width, buffer.height);
   
-  btx.save();
-
-  //座標変換
-  btx.translate(50,1050);
-  btx.scale(1,-1);
-
-/*
   // 文字列
   btx.fillStyle = "white";
   btx.textAlign = "center";
@@ -40,8 +33,16 @@ const draw = () => {
     "ver"+version,
     500,
     500
-  );*/
+  );
 
+  btx.save();
+
+  //座標変換
+  btx.translate(50,1050);
+  btx.scale(1,-1);
+
+  
+  
 
   btx.restore();
 }
@@ -161,7 +162,9 @@ ver72
 ver73
 座標変換の頭にbtx.を追加
 ver74
-loop導入
+上手くいった。loop導入
+ver75
+verを出力
 
 
 
