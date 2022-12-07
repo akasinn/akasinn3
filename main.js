@@ -1,5 +1,5 @@
 
-const version=69;
+const version=70;
 
 
 const canvas = document.getElementById("canvas");
@@ -69,7 +69,7 @@ const draw = () => {
 
 
 const loop = () => {
-  ctx.fillStyle = "white";
+  ctx.fillStyle = "red";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
   //update();
@@ -95,7 +95,7 @@ function main() {
   ctx.drawImage(
     buffer,
     0, 0, buffer.width, buffer.height,
-    0, 0, canvas.width, canvas.width
+    0, canvas.height/2, canvas.width, canvas.width
   );
   
   ctx.fillStyle = "gray";
@@ -193,4 +193,6 @@ ver68
 drawImageをbuffer.width->canvas.width
 ver69
 buffer.widthを削除
+ver70
+描き始めの位置を下に
 */
