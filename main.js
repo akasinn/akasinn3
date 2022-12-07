@@ -1,5 +1,5 @@
 
-const version=76;
+const version=77;
 
 
 const canvas = document.getElementById("canvas");
@@ -43,15 +43,15 @@ const draw = () => {
 
   //矢印
   btx.fillStyle = "black";
-  ctx.beginPath();
-  ctx.moveTo(-40,5);
-  ctx.lineTo(1000,5);
-  ctx.lineTo(1000,40);
-  ctx.lineTo(1040,0);
-  ctx.lineTo(1000,-40);
-  ctx.lineTo(1000,-5);
-  ctx.lineTo(-40,-5);
-  ctx.fill();
+  btx.beginPath();
+  btx.moveTo(-40,5);
+  btx.lineTo(1000,5);
+  btx.lineTo(1000,40);
+  btx.lineTo(1040,0);
+  btx.lineTo(1000,-40);
+  btx.lineTo(1000,-5);
+  btx.lineTo(-40,-5);
+  btx.fill();
 
   btx.restore();
 }
@@ -176,6 +176,8 @@ ver75
 verを出力
 ver76
 矢印を追加
+ver77
+ミス修正
 
 
 */
