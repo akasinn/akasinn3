@@ -1,5 +1,5 @@
 
-const version=70;
+const version=71;
 
 
 const canvas = document.getElementById("canvas");
@@ -25,6 +25,8 @@ const draw = () => {
   btx.fillStyle = "green";
   btx.fillRect(0, 0, buffer.width, buffer.height);
   
+  btx.save();
+
   //座標変換
   translate(50,1050);
   scale(1,-1);
@@ -38,6 +40,7 @@ const draw = () => {
     500,
     500
   );
+
 /*
   //軸
   btx.fillStyle = "red";
@@ -64,6 +67,7 @@ const draw = () => {
   btx.closePath();
   btx.fill();
 */
+  btx.restore();
 }
 
 
@@ -195,4 +199,6 @@ ver69
 buffer.widthを削除
 ver70
 描き始めの位置を下に
+ver71
+変化がない。saveとrestoreを追加
 */
