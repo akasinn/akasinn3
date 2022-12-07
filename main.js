@@ -1,5 +1,5 @@
 
-const version=75;
+const version=76;
 
 
 const canvas = document.getElementById("canvas");
@@ -41,8 +41,17 @@ const draw = () => {
   btx.translate(50,1050);
   btx.scale(1,-1);
 
-  
-  
+  //矢印
+  btx.fillStyle = "black";
+  ctx.beginPath();
+  ctx.moveTo(-40,5);
+  ctx.lineTo(1000,5);
+  ctx.lineTo(1000,40);
+  ctx.lineTo(1040,0);
+  ctx.lineTo(1000,-40);
+  ctx.lineTo(1000,-5);
+  ctx.lineTo(-40,-5);
+  ctx.fill();
 
   btx.restore();
 }
@@ -54,7 +63,7 @@ const loop = () => {
   ctx.drawImage(
     buffer,
     0, 0, buffer.width, buffer.height,
-    0, canvas.height/2, canvas.width, canvas.width
+    0, 0, canvas.width, canvas.width
   );
 
   window.requestAnimationFrame(loop);
@@ -165,7 +174,8 @@ ver74
 上手くいった。loop導入
 ver75
 verを出力
-
+ver76
+矢印を追加
 
 
 */
