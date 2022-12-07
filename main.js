@@ -1,5 +1,5 @@
 
-const version=71;
+const version=72;
 
 
 const canvas = document.getElementById("canvas");
@@ -31,6 +31,7 @@ const draw = () => {
   translate(50,1050);
   scale(1,-1);
 
+/*
   // 文字列
   btx.fillStyle = "white";
   btx.textAlign = "center";
@@ -39,34 +40,9 @@ const draw = () => {
     "ver"+version,
     500,
     500
-  );
+  );*/
 
-/*
-  //軸
-  btx.fillStyle = "red";
-  btx.beginPath();
-  btx.moveTo(10,495);
-  btx.lineTo(550,495);
-  btx.lineTo(550,490);
-  btx.lineTo(560,500);
-  btx.lineTo(550,510);
-  btx.lineTo(550,505);
-  btx.lineTo(10,505);
-  btx.closePath();
-  btx.fill();
-  
-  btx.fillStyle = "black";
-  btx.beginPath();
-  btx.moveTo(10,1095);
-  btx.lineTo(850,1095);
-  btx.lineTo(850,1090);
-  btx.lineTo(860,1100);
-  btx.lineTo(850,1110);
-  btx.lineTo(850,1105);
-  btx.lineTo(10,1105);
-  btx.closePath();
-  btx.fill();
-*/
+
   btx.restore();
 }
 
@@ -102,14 +78,7 @@ function main() {
     0, canvas.height/2, canvas.width, canvas.width
   );
   
-  ctx.fillStyle = "gray";
-  ctx.beginPath();
-  ctx.moveTo(10,600,);
-  ctx.lineTo(1190,600);
-  ctx.lineTo(1190,610);
-  ctx.lineTo(10,610);
-  ctx.closePath();
-  ctx.fill();
+  
 
   //loop();
   return ;
@@ -201,4 +170,6 @@ ver70
 描き始めの位置を下に
 ver71
 変化がない。saveとrestoreを追加
+ver72
+変化がない。矢印を削除。verを出力する部分をコメントアウト
 */
