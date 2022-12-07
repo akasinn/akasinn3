@@ -1,5 +1,5 @@
 
-const version=72;
+const version=73;
 
 
 const canvas = document.getElementById("canvas");
@@ -28,8 +28,8 @@ const draw = () => {
   btx.save();
 
   //座標変換
-  translate(50,1050);
-  scale(1,-1);
+  btx.translate(50,1050);
+  btx.scale(1,-1);
 
 /*
   // 文字列
@@ -172,4 +172,7 @@ ver71
 変化がない。saveとrestoreを追加
 ver72
 変化がない。矢印を削除。verを出力する部分をコメントアウト
+ver73
+座標変換の頭にbtx.を追加
+
 */
