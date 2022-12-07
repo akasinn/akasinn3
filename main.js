@@ -1,5 +1,5 @@
 
-const version=73;
+const version=74;
 
 
 const canvas = document.getElementById("canvas");
@@ -49,16 +49,11 @@ const draw = () => {
 
 
 const loop = () => {
-  ctx.fillStyle = "red";
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-  //update();
-  draw();
 
   ctx.drawImage(
     buffer,
     0, 0, buffer.width, buffer.height,
-    0, 0, canvas.width, canvas.width
+    0, canvas.height/2, canvas.width, canvas.width
   );
 
   window.requestAnimationFrame(loop);
@@ -68,19 +63,10 @@ const loop = () => {
 function main() {
   ctx.fillStyle = "blue";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
-  //return;
+  
 
   draw();
-
-  ctx.drawImage(
-    buffer,
-    0, 0, buffer.width, buffer.height,
-    0, canvas.height/2, canvas.width, canvas.width
-  );
-  
-  
-
-  //loop();
+  loop();
   return ;
 }
 
@@ -174,5 +160,9 @@ ver72
 変化がない。矢印を削除。verを出力する部分をコメントアウト
 ver73
 座標変換の頭にbtx.を追加
+ver74
+loop導入
+
+
 
 */
