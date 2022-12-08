@@ -1,5 +1,5 @@
 
-const version=81;
+const version=82;
 
 
 const canvas = document.getElementById("canvas");
@@ -34,9 +34,10 @@ const draw = () => {
     1000,
     100
   );
-  btx.fillText("x",1025,950);
-  btx.fillText("y",50,25);
-  btx.fillText("o",25,1020);
+  btx.fillStyle = "black";
+  btx.fillText("x",1025,975);
+  btx.fillText("y",75,30);
+  btx.fillText("o",25,1070);
   btx.save();
 
   //座標変換
@@ -44,7 +45,6 @@ const draw = () => {
   btx.scale(1,-1);
 
   //軸
-  btx.fillStyle = "black";
   btx.beginPath();
   btx.moveTo(-40,5);
   btx.lineTo(-5,5);
@@ -201,5 +201,6 @@ ver80
 xyoの文字を追加
 ver81
 xyoが上下反転していたので修正
-
+ver82
+xyoを位置を修正
 */
