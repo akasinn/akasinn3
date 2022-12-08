@@ -1,5 +1,5 @@
 
-const version=78;
+const version=79;
 
 
 const canvas = document.getElementById("canvas");
@@ -31,8 +31,8 @@ const draw = () => {
   btx.font = "60px serif";
   btx.fillText(
     "ver"+version,
-    500,
-    500
+    1000,
+    100
   );
 
   btx.save();
@@ -58,6 +58,12 @@ const draw = () => {
   btx.lineTo(1040,0);
   btx.lineTo(1000,-40);
   btx.lineTo(1000,-5);
+
+  btx.lineTo(5,-5);
+  btx.lineTo(5,-40);
+  btx.lineTo(-5,-40);
+  btx.lineTo(-5,-5);
+
   btx.lineTo(-40,-5);
   btx.fill();
 
@@ -188,6 +194,8 @@ ver77
 ミス修正
 ver78
 軸を描く
+ver79
+文字列を右上へ。軸を修正。
 
 
 */
