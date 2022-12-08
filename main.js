@@ -1,5 +1,5 @@
 
-const version=80;
+const version=81;
 
 
 const canvas = document.getElementById("canvas");
@@ -34,7 +34,9 @@ const draw = () => {
     1000,
     100
   );
-
+  btx.fillText("x",1025,950);
+  btx.fillText("y",50,25);
+  btx.fillText("o",25,1020);
   btx.save();
 
   //座標変換
@@ -64,10 +66,7 @@ const draw = () => {
   btx.lineTo(-40,-5);
   btx.fill();
 
-  //文字
-  btx.fillText("x",1025,25);
-  btx.fillText("y",25,1025);
-  btx.fillText("o",-25,-25);
+
 
   btx.restore();
 }
@@ -200,6 +199,7 @@ ver79
 文字列を右上へ。軸を修正。
 ver80
 xyoの文字を追加
-
+ver81
+xyoが上下反転していたので修正
 
 */
