@@ -1,5 +1,5 @@
 
-const version=79;
+const version=80;
 
 
 const canvas = document.getElementById("canvas");
@@ -45,7 +45,6 @@ const draw = () => {
   btx.fillStyle = "black";
   btx.beginPath();
   btx.moveTo(-40,5);
-
   btx.lineTo(-5,5);
   btx.lineTo(-5,1000);
   btx.lineTo(-40,1000);
@@ -58,14 +57,17 @@ const draw = () => {
   btx.lineTo(1040,0);
   btx.lineTo(1000,-40);
   btx.lineTo(1000,-5);
-
   btx.lineTo(5,-5);
   btx.lineTo(5,-40);
   btx.lineTo(-5,-40);
   btx.lineTo(-5,-5);
-
   btx.lineTo(-40,-5);
   btx.fill();
+
+  //文字
+  btx.fillText("x",1025,25);
+  btx.fillText("y",25,1025);
+  btx.fillText("o",-25,-25);
 
   btx.restore();
 }
@@ -196,6 +198,8 @@ ver78
 軸を描く
 ver79
 文字列を右上へ。軸を修正。
+ver80
+xyoの文字を追加
 
 
 */
