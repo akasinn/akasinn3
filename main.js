@@ -1,5 +1,5 @@
 
-const version=77;
+const version=78;
 
 
 const canvas = document.getElementById("canvas");
@@ -41,10 +41,18 @@ const draw = () => {
   btx.translate(50,1050);
   btx.scale(1,-1);
 
-  //矢印
+  //軸
   btx.fillStyle = "black";
   btx.beginPath();
   btx.moveTo(-40,5);
+
+  btx.lineTo(-5,5);
+  btx.lineTo(-5,1000);
+  btx.lineTo(-40,1000);
+  btx.lineTo(0,1040);
+  btx.lineTo(40,1000);
+  btx.lineTo(5,1000);
+  btx.lineTo(5,5);
   btx.lineTo(1000,5);
   btx.lineTo(1000,40);
   btx.lineTo(1040,0);
@@ -178,6 +186,8 @@ ver76
 矢印を追加
 ver77
 ミス修正
+ver78
+軸を描く
 
 
 */
