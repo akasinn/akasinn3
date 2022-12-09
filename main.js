@@ -1,5 +1,5 @@
 
-const version=83;
+const version=98;
 
 
 const canvas = document.getElementById("canvas");
@@ -18,7 +18,25 @@ const btx = buffer.getContext("2d");
 buffer.width = buffer.height = 1100;
 
 
-
+function mathmatical_function(x){
+  const x_string=x+"";
+  const keta=x_string.length;
+  var y_array=[];
+  for(var i=0;i<keta;i++){
+    y_array=y_array.concat(x_string[i]);
+  }
+  for(var i=0;i<keta-1;i++){
+    if(x_string[i]==x_string[i+1]){
+      y_array[i]='0';
+      y_array[i+1]='0';
+    }
+  }
+  var y="";
+  for(var i=0;i<keta;i++){
+    y=y.concat(y_array[i]);
+  }
+  return Number(y);
+}
 
 const draw = () => {
   // 背景
@@ -30,14 +48,16 @@ const draw = () => {
   btx.textAlign = "center";
   btx.font = "60px serif";
   btx.fillText(
-    "ver"+version,
-    1000,
-    100
+    "ver"+version,400,100
   );
   btx.fillStyle = "black";
-  btx.fillText("x",1075,1000);
-  btx.fillText("y",75,30);
-  btx.fillText("o",25,1080);
+  btx.fillText("x",1075,1025);
+  btx.fillText("y",77,32);
+  btx.fillText("o",25,1083);
+  btx.fillText("1",25,70);
+  btx.fillText("1",1050,1090);
+
+
   btx.save();
 
   //座標変換
@@ -66,7 +86,14 @@ const draw = () => {
   btx.lineTo(-40,-5);
   btx.fill();
 
-
+  btx.fillStyle = "white";
+  for(var x=0;x<=1000;x++){
+    const y=mathmatical_function(x);
+    //const endAngle = Math.PI * 2; // 円孤の終点
+  //  btx.arc(x, y,2,0,endAngle,true);
+   // btx.fill();
+    btx.fillText(".",x,y+2);
+  }
 
   btx.restore();
 }
@@ -97,114 +124,7 @@ function main() {
 
 window.onload = main;
 
-
 /*更新履歴
-11/27/8:28
-GROUND_Yを850から800へ
-11/27/8:31
-変化が見られなかったのでGROUND_Yを800から100へ
-11/27/8:36
-変化があった。背景をwhiteにした。
-11/27/8:41
-変化がない。背景をgreenにして、groundを消す。
-11/27/8:47
-変化があった。いらん所をコメントアウト
-11/27/22:41
-ループしやんようにした。
-11/27/22:50
-最後のifを消してみた。
-11/27/22:57
-大胆にコメントアウト
-11/27/23:03
-コメントアウトした所を削除
-11/28/6:40
-"kWh"をf(x)に変える
-11/28/7:15
-main関数を導入し、roop関数を使わないようにした
-11/28/15:03
-aspectを2に
-11/28/20:23
-aspectを0.5に。
-12/3/11:43
-ctx.fillStyle = "green->blue";
-12/3/12:05
-main関数中のreturnをコメントアウト
-12/3/14:50
-resize関数をコメントアウト
-12/3/15:02
-resize関数復活。画面全体がcanvasになるように。
-12/3/20:40
-"f(x)->関数f(x)"
-12/4/11:06
-下の方は青く表示されるように
-12/4/19:40
-bufferの縦横を1000->1200
-12/4/20:32
-x軸を追加
-12/4/20:38
-x軸を消して三角形を追加
-12/4/20:54
-stroke->fill
-12/4/20:58
-青い三角形ができてしまったので黒くした
-12/5/7:10
-三角形を横長の長方形へ
-12/5/7:21
-btxにも同様の長方形を少し上に。
-12/5/7:24ver10
-文字列がバージョンを表すように。
-12/5/7:33ver11
-軸を矢印に。versionを文字でおく。
-12/5/19:47ver12
-矢印を短く
-ver13
-矢印をもう一つ
-ver14
-追加した矢印を修正、矢印をカラフルに
-ver15
-loopを用いて、消えないように
-ver16
-ちゃんとloopするように
-ver64
-縦横比をしっかり
-ver65
-幅を1100にして、座標変換
-ver66
-エラーが出たので、いっぱいコメントアウト
-ver67
-エラーが治らない。loopをmainに
-ver68
-drawImageをbuffer.width->canvas.width
-ver69
-buffer.widthを削除
-ver70
-描き始めの位置を下に
-ver71
-変化がない。saveとrestoreを追加
-ver72
-変化がない。矢印を削除。verを出力する部分をコメントアウト
-ver73
-座標変換の頭にbtx.を追加
-ver74
-上手くいった。loop導入
-ver75
-verを出力
-ver76
-矢印を追加
-ver77
-ミス修正
-ver78
-軸を描く
-ver79
-文字列を右上へ。軸を修正。
-ver80
-xyoの文字を追加
-ver81
-xyoが上下反転していたので修正
-ver82
-xyoの位置を修正
-ver83
-xyoの位置を修正、矢印を尖らせる
 
 
 
