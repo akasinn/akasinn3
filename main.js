@@ -1,5 +1,5 @@
 
-const version=101;
+const version=102;
 
 
 const canvas = document.getElementById("canvas");
@@ -87,12 +87,9 @@ const draw = () => {
   btx.fill();
 
   btx.fillStyle = "white";
-  for(var x=0;x<=10000;x++){
+  for(var x=0;x<=10000000;x++){
     const y=mathmatical_function(x);
-    //const endAngle = Math.PI * 2; // 円孤の終点
-  //  btx.arc(x, y,2,0,endAngle,true);
-   // btx.fill();
-    btx.fillText(".", x * 0.1 ,y*0.1+2);
+    btx.fillText(".", x * 0.0001 ,y*0.0001+2);
   }
 
   btx.restore();
@@ -129,5 +126,7 @@ ver99
 点を10000個打つ。
 ver101
 縮尺を調整
+ver102
+点1000万個
 
 */
