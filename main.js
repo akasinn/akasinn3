@@ -1,5 +1,5 @@
 
-const version=100;
+const version=101;
 
 
 const canvas = document.getElementById("canvas");
@@ -92,7 +92,7 @@ const draw = () => {
     //const endAngle = Math.PI * 2; // 円孤の終点
   //  btx.arc(x, y,2,0,endAngle,true);
    // btx.fill();
-    btx.fillText(".", x * 0.1 ,y+2);
+    btx.fillText(".", x * 0.1 ,y*0.1+2);
   }
 
   btx.restore();
@@ -127,6 +127,7 @@ window.onload = main;
 /*更新履歴
 ver99
 点を10000個打つ。
-ver100
+ver101
+縮尺を調整
 
 */
