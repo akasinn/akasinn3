@@ -1,5 +1,5 @@
 
-const version=103;
+const version=104;
 
 
 const canvas = document.getElementById("canvas");
@@ -100,6 +100,7 @@ const draw = () => {
 
   //グラフ
   btx.fillStyle = "white";
+  btx.font = "18px serif";
   for(var x=0;x<=10000000;x++){
     const y=mathmatical_function(x);
     btx.fillText(".", x * 0.0001 ,y*0.0001+2);
@@ -143,4 +144,6 @@ ver102
 点1000万個
 ver103
 0.1間隔で補助線を引く。
+ver104
+点の大きさを60->18
 */
