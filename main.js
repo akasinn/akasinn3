@@ -1,5 +1,5 @@
 
-const version=98;
+const version=99;
 
 
 const canvas = document.getElementById("canvas");
@@ -87,12 +87,12 @@ const draw = () => {
   btx.fill();
 
   btx.fillStyle = "white";
-  for(var x=0;x<=1000;x++){
+  for(var x=0;x<=10000;x++){
     const y=mathmatical_function(x);
     //const endAngle = Math.PI * 2; // 円孤の終点
   //  btx.arc(x, y,2,0,endAngle,true);
    // btx.fill();
-    btx.fillText(".",x,y+2);
+    btx.fillText(".",x/(1.0),y+2);
   }
 
   btx.restore();
@@ -125,7 +125,8 @@ function main() {
 window.onload = main;
 
 /*更新履歴
-
+ver99
+点を10000個打つ。
 
 
 */
