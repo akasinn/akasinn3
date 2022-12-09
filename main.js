@@ -1,5 +1,5 @@
 
-const version=102;
+const version=103;
 
 
 const canvas = document.getElementById("canvas");
@@ -86,6 +86,19 @@ const draw = () => {
   btx.lineTo(-40,-5);
   btx.fill();
 
+  //補助線
+  for(var i=1;i<=10;i++){
+    btx.beginPath();
+    btx.moveTo(i*100,0);
+    btx.lineTo(i*100,1000);
+    btx.stroke();
+    btx.beginPath();
+    btx.moveTo(0,i*100);
+    btx.lineTo(1000,i*100);
+    btx.stroke();
+  }
+
+  //グラフ
   btx.fillStyle = "white";
   for(var x=0;x<=10000000;x++){
     const y=mathmatical_function(x);
@@ -128,5 +141,6 @@ ver101
 縮尺を調整
 ver102
 点1000万個
-
+ver103
+0.1間隔で補助線を引く。
 */
